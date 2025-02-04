@@ -4,4 +4,35 @@
 * {
     font-family: "Montserrat", "Lucida Sans", "Lucida Sans Regular",
         "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+header {
+    background-color: #b1bec1;
+    min-height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.websiteNav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.websiteNav ul li a:link,
+.websiteNav ul li a:visited {
+    text-decoration: none;
+}
+
+#currentPage {
+    font-weight: 800;
+    color: #7d987c;
+    padding-bottom: 5px;
+    border-bottom: 3px solid currentColor;
 }
