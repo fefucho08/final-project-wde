@@ -1,0 +1,48 @@
+main {
+    display: flex;
+    align-items: center;
+}
+
+.landing {
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.infoContainer {
+    width: fit-content;
+}
+
+.infoContainer h1 span {
+    display: block;
+}
+
+.infoContainer p {
+    width: 70%;
+}
+
+.cvButton {
+    background-color: #3d5fcf;
+    padding: 10px;
+    display: block;
+    width: fit-content;
+    color: #fff;
+    border-radius: 30px;
+    margin-left: auto;
+    position: relative;
+    top: 50px;
+    transition: all 0.3s ease-in;
+}
+
+.cvButton:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #3d5fcf;
+}
+
+.landing img {
+    width: 25%;
+    border-radius: 100%;
+    box-shadow: 0 0 20px #3d5fcf;
+}
