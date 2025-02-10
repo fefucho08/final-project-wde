@@ -1,0 +1,160 @@
+h1 {
+    color: #3d5fcf;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: larger;
+    background-color: #3d5fcf;
+    padding: 5px;
+    color: #fff;
+    width: fit-content;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px #3d5fcf;
+}
+
+main section:not(:first-of-type) {
+    margin-top: 30px;
+}
+
+.introSection p {
+    margin-bottom: 5px;
+    text-indent: 30px;
+    text-align: justify;
+}
+
+.introSection p:last-child {
+    clear: both;
+}
+
+.imageContainer {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.introSection .imageContainer:nth-of-type(1) {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.introSection .imageContainer:nth-of-type(2) {
+    float: right;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.imageContainer:nth-of-type(1) img {
+    object-position: -55px;
+}
+
+.educationCarousel {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.educationCard {
+    background-color: #3d5fcf;
+    color: #fff;
+    width: fit-content;
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+    padding-top: 50px;
+    min-width: 600px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.institution {
+    background-color: #fff;
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 25px;
+    display: block;
+    margin: 0 auto;
+    border: 10px solid #3d5fcf;
+}
+
+.institution img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.educationCard p:first-of-type {
+    font-weight: 450;
+    margin-bottom: 5px;
+}
+
+.educationCard p:last-child {
+    font-style: italic;
+    font-size: smaller;
+}
+
+.languagesGallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 450px;
+}
+
+.langCard {
+    width: 180px;
+    height: 180px;
+    background-color: #fff;
+    padding: 30px;
+    border: 5px solid #3d5fcf;
+    border-radius: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.langCard p {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #3d5fcf;
+    font-weight: 600;
+}
+
+.langCard:hover p {
+    visibility: visible;
+    opacity: 1;
+}
+
+.langCard:hover {
+    align-self: flex-start;
+    box-shadow: 0 0 30px #3d5fcf;
+}
+
+.langCard > img {
+    width: 100%;
+    object-fit: cover;
+}

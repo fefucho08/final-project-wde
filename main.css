@@ -31,11 +31,12 @@ header {
 main {
     /* TOTAL - HEADER - FOOTER */
     min-height: calc(100vh - 10vh - 10vh);
+    padding: 20px;
 }
 
 .important {
     color: #3d5fcf;
-    font-size: 1.8em;
+    font-weight: bold;
 }
 
 .websiteNav ul {
@@ -48,6 +49,10 @@ main {
 .websiteNav ul li a:visited {
     color: #fff;
 }
+
+/* li:has(#currentPage) {
+    order: -1;
+} */
 
 #currentPage {
     font-weight: 800;
