@@ -22,6 +22,7 @@ main section:not(:first-of-type) {
     margin-bottom: 5px;
     text-indent: 30px;
     text-align: justify;
+    color: #303030;
 }
 
 .introSection p:last-child {
@@ -29,8 +30,8 @@ main section:not(:first-of-type) {
 }
 
 .imageContainer {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 5px;
 }
 
@@ -55,7 +56,7 @@ main section:not(:first-of-type) {
 }
 
 .imageContainer:nth-of-type(1) img {
-    object-position: -55px;
+    object-position: -70px;
 }
 
 .educationCarousel {
@@ -72,7 +73,7 @@ main section:not(:first-of-type) {
     position: relative;
     padding: 20px;
     padding-top: 50px;
-    min-width: 600px;
+    min-width: 40vw;
     margin: 10px;
     text-align: center;
     border-radius: 5px;

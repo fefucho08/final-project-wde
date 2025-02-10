@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="../main.css" />
+        <link rel="stylesheet" href="../styles/contact.css" />
         <title>Contact</title>
 
         <!-- FONT AWESOME IMPORT -->
@@ -35,7 +36,30 @@
                 </ul>
             </nav>
         </header>
-        <main></main>
+        <main>
+            <form action="" class="contactForm">
+                <h1>Send me a message!</h1>
+                <div class="inputGroup">
+                    <input type="text" name="name" id="nameInput" required />
+                    <label for="nameInput">Name</label>
+                </div>
+                <div class="inputGroup">
+                    <input type="email" name="email" id="emailInput" required />
+                    <label for="emailInput">Email</label>
+                </div>
+                <div class="inputGroup">
+                    <textarea
+                        name="message"
+                        id="messageArea"
+                        required
+                    ></textarea>
+                    <label for="messageArea">Your message</label>
+                </div>
+                <button type="submit" id="submitBtn">
+                    Send! <i class="fa-solid fa-message"></i>
+                </button>
+            </form>
+        </main>
         <footer>
             <nav aria-label="Social Media Navigation">
                 <ul>
