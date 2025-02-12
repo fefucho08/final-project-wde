@@ -116,6 +116,7 @@ main section:not(:first-of-type) {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
     gap: 10px;
     min-height: 450px;
 }
