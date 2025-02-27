@@ -9,8 +9,10 @@
     padding: 0;
 }
 
-html {
+:root {
     overscroll-behavior: none;
+    --main-color: #3d5fcf;
+    --dark-color: #303030;
 }
 
 body {
@@ -23,7 +25,7 @@ a:visited {
 }
 
 header {
-    background-color: #303030;
+    background-color: var(--dark-color);
     height: 10vh;
     display: flex;
     align-items: center;
@@ -42,7 +44,7 @@ main {
 }
 
 .important {
-    color: #3d5fcf;
+    color: var(--main-color);
     font-weight: bold;
 }
 
@@ -63,13 +65,13 @@ main {
 
 #currentPage {
     font-weight: 800;
-    color: #3d5fcf;
+    color: var(--main-color);
     padding-bottom: 5px;
     border-bottom: 3px solid currentColor;
 }
 
 footer {
-    background-color: #303030;
+    background-color: var(--dark-color);
     min-height: 10vh;
     display: flex;
     justify-content: center;
@@ -83,14 +85,14 @@ footer ul {
 }
 
 footer ul li a {
-    background-color: #3d5fcf;
+    background-color: var(--main-color);
     width: 50px;
     height: 50px;
     text-align: center;
     font-size: 30px;
     padding: 10px;
     border-radius: 100%;
-    box-shadow: 0 0 5px #3d5fcf;
+    box-shadow: 0 0 5px --main-color;
     display: block;
 }
 

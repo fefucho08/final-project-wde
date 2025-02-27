@@ -5,7 +5,7 @@ main {
 }
 
 .contactForm {
-    background-color: #3d5fcf;
+    background-color: var(--main-color);
     color: #fff;
     padding: 50px;
     border-radius: 5px;
@@ -13,7 +13,7 @@ main {
     grid-template-columns: 1fr 1fr;
     column-gap: 10px;
     row-gap: 20px;
-    box-shadow: 0 0 60px #3d5fcf;
+    box-shadow: 0 0 60px var(--main-color);
     min-width: 60vw;
 }
 
@@ -66,7 +66,7 @@ main {
 .inputGroup textarea:focus-visible ~ label,
 .inputGroup textarea:valid ~ label {
     top: 0;
-    background-color: #3d5fcf;
+    background-color: var(--main-color);
     font-size: 0.7rem;
 }
 
@@ -92,7 +92,7 @@ main {
     width: 40%;
     justify-self: end;
     background-color: #fff;
-    color: #3d5fcf;
+    color: var(--main-color);
     border: none;
     border-radius: 5px;
     padding: 10px;
