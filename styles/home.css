@@ -5,6 +5,7 @@
 
 .infoContainer h1 span {
     display: block;
+    font-size: 4rem;
 }
 
 .infoContainer p {
@@ -36,4 +37,27 @@
     aspect-ratio: 1/1;
     object-fit: cover;
     box-shadow: 0 0 60px var(--main-color);
+}
+
+@media screen and (max-width: 575px) {
+    .landing {
+        flex-direction: column;
+    }
+
+    .landing img {
+        order: -1;
+        width: 70%;
+    }
+
+    .landing .infoContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cvButton {
+        position: static;
+        margin: 0;
+    }
 }

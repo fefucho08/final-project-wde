@@ -5,7 +5,7 @@ h1 {
 
 h2 {
     font-weight: 500;
-    font-size: larger;
+    font-size: 1.2rem;
     background-color: var(--main-color);
     padding: 5px;
     color: #fff;
@@ -108,7 +108,7 @@ main section:not(:first-of-type) {
 
 .educationCard p:last-child {
     font-style: italic;
-    font-size: smaller;
+    font-size: 0.8rem;
 }
 
 .languagesGallery {
