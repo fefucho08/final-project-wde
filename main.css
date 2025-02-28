@@ -60,10 +60,6 @@ main {
     color: #fff;
 }
 
-/* li:has(#currentPage) {
-    order: -1;
-} */
-
 #currentPage {
     font-weight: 800;
     color: var(--main-color);
@@ -77,6 +73,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 }
 
 footer ul {

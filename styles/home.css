@@ -14,13 +14,12 @@
 
 .cvButton {
     background-color: var(--main-color);
-    padding: 10px;
+    padding: 1rem;
     display: block;
     width: fit-content;
     color: #fff;
     border-radius: 30px;
     margin-left: auto;
-    align-self: flex-end;
     position: relative;
     top: 50px;
     transition: all 0.3s ease-in;
@@ -40,8 +39,18 @@
 }
 
 @media screen and (max-width: 575px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .infoContainer h1 span {
+        font-size: 2.5rem;
+    }
+
     .landing {
         flex-direction: column;
+        gap: 5dvh;
+        padding: 50px 20px;
     }
 
     .landing img {
@@ -54,6 +63,11 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 4dvh;
+    }
+
+    .landing .infoContainer p {
+        width: 100%;
     }
 
     .cvButton {
