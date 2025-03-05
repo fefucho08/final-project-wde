@@ -42,6 +42,10 @@ header {
     z-index: 1;
 }
 
+.shortInfo span {
+    display: inline-block;
+}
+
 .mobileMenuIcon {
     display: none;
 }
@@ -123,8 +127,34 @@ footer ul li a:visited {
         flex-direction: column;
     }
 
+    .closeMenu {
+        display: block;
+        font-size: 1.5rem;
+        align-self: flex-end;
+    }
+
     .websiteNav {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(48, 48, 48, 0.9);
+        backdrop-filter: blur(15px);
+        padding: 20px;
+        z-index: 100;
+        padding: 20px 30px;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .websiteNav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
     }
 
     .mobileMenuIcon {
@@ -145,31 +175,7 @@ footer ul li a:visited {
         overflow: hidden;
     }
 
-    body:has(#menuCheckbox:checked) .closeMenu {
-        display: block;
-        font-size: 1.5rem;
-        align-self: flex-end;
-    }
-
     body:has(#menuCheckbox:checked) .websiteNav {
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(48, 48, 48, 0.9);
-        backdrop-filter: blur(15px);
-        padding: 20px;
-        z-index: 100;
-        padding: 20px 30px;
-    }
-
-    body:has(#menuCheckbox:checked) .websiteNav ul {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
+        transform: translateX(0);
     }
 }
