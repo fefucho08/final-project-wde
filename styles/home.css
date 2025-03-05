@@ -38,6 +38,37 @@
     box-shadow: 0 0 60px var(--main-color);
 }
 
+@media screen and (max-width: 991px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .landing {
+        padding: 50px 20px;
+        gap: 5dvh;
+    }
+
+    .infoContainer h1 span {
+        font-size: 3rem;
+    }
+
+    .landing img {
+        width: 40%;
+    }
+
+    .landing .infoContainer {
+        max-width: calc(60% - 5dvh);
+        display: flex;
+        flex-direction: column;
+        gap: 4dvh;
+    }
+
+    .cvButton {
+        position: static;
+        margin: 0;
+    }
+}
+
 @media screen and (max-width: 575px) {
     h1 {
         font-size: 1.8rem;
@@ -49,8 +80,6 @@
 
     .landing {
         flex-direction: column;
-        gap: 5dvh;
-        padding: 50px 20px;
     }
 
     .landing img {
@@ -59,11 +88,8 @@
     }
 
     .landing .infoContainer {
-        display: flex;
-        flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 4dvh;
     }
 
     .landing .infoContainer p {
