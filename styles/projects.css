@@ -13,9 +13,6 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    overflow-y: hidden;
-    overscroll-behavior: contain;
-    scroll-snap-type: x mandatory;
     padding: 20px;
 }
 
