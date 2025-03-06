@@ -87,7 +87,6 @@ main {
 @media screen and (max-width: 991px) {
     .projectsGallery {
         grid-template-columns: 1fr;
-        grid-auto-rows: auto;
     }
 
     .projectCard:hover {
@@ -116,5 +115,6 @@ main {
 @media screen and (max-width: 575px) {
     .projectsGallery {
         font-size: small;
+        grid-auto-rows: auto;
     }
 }
