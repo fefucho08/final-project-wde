@@ -114,20 +114,21 @@ main section:not(:first-of-type) {
 }
 
 .languagesGallery {
+    margin: 20px 0;
     width: 100%;
     overflow: hidden;
-    margin: 10px 0;
+    margin: 40px 0;
 }
 
 .langSlides {
     display: flex;
     gap: 10px;
-    width: calc(18 * 180px + 17 * 10px);
+    width: calc(18 * 20dvw + 17 * 10px);
     animation: galleryAnimation 10s linear infinite; /* Ajuste a duração da animação conforme necessário */
 }
 
 .langCard {
-    width: 180px;
+    width: 20dvw;
     height: auto;
     text-align: center;
     display: flex;
@@ -222,5 +223,9 @@ main section:not(:first-of-type) {
 
     .educationCard h3 {
         font-size: 1rem;
+    }
+
+    .languageSymbol {
+        border-width: 3px;
     }
 }
