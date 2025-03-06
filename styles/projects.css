@@ -12,6 +12,7 @@ main {
 .projectsGallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
     gap: 20px;
     padding: 20px;
 }
@@ -86,6 +87,7 @@ main {
 @media screen and (max-width: 991px) {
     .projectsGallery {
         grid-template-columns: 1fr;
+        grid-auto-rows: auto;
     }
 
     .projectCard:hover {
