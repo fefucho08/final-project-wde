@@ -114,53 +114,61 @@ main section:not(:first-of-type) {
 }
 
 .languagesGallery {
+    width: 100%;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.langSlides {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
     gap: 10px;
-    min-height: 450px;
+    width: calc(18 * 180px + 17 * 10px);
+    animation: galleryAnimation 10s linear infinite; /* Ajuste a duração da animação conforme necessário */
 }
 
 .langCard {
     width: 180px;
-    height: 180px;
-    background-color: #fff;
-    padding: 30px;
-    border: 5px solid var(--main-color);
-    border-radius: 100%;
+    height: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     position: relative;
 }
 
-.langCard p {
-    visibility: hidden;
-    opacity: 0;
+.languageSymbol {
+    position: relative;
+    width: 80%;
+    aspect-ratio: 1/1;
+    border: 5px solid var(--main-color);
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.languageSymbol > img {
     position: absolute;
-    top: 190px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: var(--main-color);
-    font-weight: 600;
-}
-
-.langCard:hover p {
-    visibility: visible;
-    opacity: 1;
-}
-
-.langCard:hover {
-    align-self: flex-start;
-    box-shadow: 0 0 30px var(--main-color);
-}
-
-.langCard > img {
-    width: 100%;
+    top: 0;
+    right: 0;
     object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.langCard p {
+    font-weight: 600;
+    color: var(--main-color);
+    margin-top: 10px;
+}
+
+@keyframes galleryAnimation {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 @media screen and (max-width: 991px) {
