@@ -7,7 +7,7 @@ main {
 .contactForm {
     background-color: var(--main-color);
     color: #fff;
-    padding: 50px;
+    padding: 3rem;
     border-radius: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -110,4 +110,16 @@ main {
 #submitBtn:hover {
     transform: scale(1.06);
     box-shadow: 0 0 10px #fff;
+}
+
+@media screen and (max-width: 575px) {
+    .contactForm {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .contactForm h1 {
+        text-align: center;
+    }
 }

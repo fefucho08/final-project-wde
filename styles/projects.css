@@ -114,7 +114,7 @@ main {
 
 @media screen and (max-width: 575px) {
     .projectsGallery {
-        font-size: small;
+        font-size: smaller;
         grid-auto-rows: auto;
     }
 }
