@@ -125,7 +125,7 @@ main section:not(:first-of-type) {
     display: flex;
     gap: 10px;
     width: calc(18 * 20dvw + 17 * 10px);
-    animation: galleryAnimation 10s linear infinite; /* Ajuste a duração da animação conforme necessário */
+    animation: galleryAnimation 10s linear infinite;
 }
 
 .langCard {
@@ -179,7 +179,7 @@ main section:not(:first-of-type) {
     }
 
     .imageContainer:nth-of-type(1) img {
-        object-position: start;
+        object-position: left;
     }
 }
 

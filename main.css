@@ -106,7 +106,7 @@ footer ul li a {
     font-size: 2rem;
     padding: 10px;
     border-radius: 100%;
-    box-shadow: 0 0 5px --main-color;
+    box-shadow: 0 0 5px var(--main-color);
     display: block;
 }
 
