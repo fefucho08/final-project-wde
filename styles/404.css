@@ -1,0 +1,32 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 8rem;
+    position: relative;
+    color: var(--main-color);
+    padding: 15px;
+    letter-spacing: 0.05em;
+}
+
+h1::before {
+    content: "404";
+    position: absolute;
+    left: 0;
+    transform: translate(-10px, -20px);
+    z-index: -1;
+    background-color: var(--main-color);
+    color: #f0f0f0;
+    background-clip: text;
+    -webkit-text-stroke: 0.02em transparent;
+    padding: 15px;
+    letter-spacing: 0.05em;
+}
+
+p {
+    font-weight: 600;
+}

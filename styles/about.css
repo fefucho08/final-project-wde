@@ -179,7 +179,7 @@ main section:not(:first-of-type) {
     }
 
     .imageContainer:nth-of-type(1) img {
-        object-position: left;
+        object-position: center;
     }
 }
 
@@ -191,6 +191,10 @@ main section:not(:first-of-type) {
     .introSection .imageContainer:nth-of-type(1) {
         float: none;
         margin: 1rem auto;
+    }
+
+    .imageContainer:nth-of-type(1) img {
+        object-position: -70px;
     }
 
     .introSection .imageContainer:nth-of-type(2) {
