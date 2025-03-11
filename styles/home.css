@@ -30,7 +30,11 @@
     box-shadow: 0 0 10px var(--main-color);
 }
 
-.landing img {
+.landing picture {
+    display: contents;
+}
+
+.landing picture img {
     width: 25%;
     border-radius: 100%;
     aspect-ratio: 1/1;
@@ -52,7 +56,7 @@
         font-size: 3rem;
     }
 
-    .landing img {
+    .landing picture img {
         width: 40%;
     }
 
@@ -82,7 +86,7 @@
         flex-direction: column;
     }
 
-    .landing img {
+    .landing picture img {
         order: -1;
         width: 70%;
     }
