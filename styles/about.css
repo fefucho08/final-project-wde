@@ -176,7 +176,7 @@ main section:not(:first-of-type) {
 .FAQSection details {
     margin-bottom: 15px;
     border-radius: 8px;
-    padding: 10px;
+    padding: 1rem;
     background-color: #f9f9f9;
     transition: all 0.3s ease-in-out;
 }
