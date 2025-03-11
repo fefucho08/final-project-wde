@@ -173,6 +173,53 @@ main section:not(:first-of-type) {
     }
 }
 
+.FAQSection details {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+}
+
+.FAQSection details[open] {
+    background-color: #fff;
+    border-color: #bbb;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.FAQSection summary {
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 0;
+    color: var(--dark-color);
+}
+
+.FAQSection summary:hover,
+.FAQSection details[open] summary {
+    color: var(--main-color);
+}
+
+.FAQSection details:hover:not([open]) {
+    box-shadow: 0 0px 15px var(--main-color);
+}
+
+.FAQSection p {
+    padding: 10px 0;
+    line-height: 1.5;
+    color: var(--dark-color);
+}
+
+.FAQSection a {
+    color: var(--main-color);
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.FAQSection a:hover {
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 991px) {
     .imageContainer {
         max-width: 30dvw;
