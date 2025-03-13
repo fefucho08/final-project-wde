@@ -3,7 +3,7 @@
     color: var(--dark-color);
 }
 
-.infoContainer h1 span {
+.important.titleHighlight {
     display: block;
     font-size: 4rem;
 }
